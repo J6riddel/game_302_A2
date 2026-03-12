@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "width": 1800,
+  "height": 1400,
+  "startNode": "start",
+  "nodes": {
+    "start": { "x": 600, "y": 800, "up": "tree1", "left": "bush1", "landmark": "📍 Start" },
+    "bush1": { "x": 300, "y": 800, "right": "start", "landmark": "🌿 Bush" },
+    "tree1": { "x": 600, "y": 500, "right": "rock1", "up": "ruins1", "down": "start", "landmark": "🌲 Tree" },
+    "ruins1": { "x": 600, "y": 200, "down": "tree1", "landmark": "🏛️ Ruins" },
+    "rock1": { "x": 900, "y": 500, "down": "ruins2", "up": "tree2", "left": "tree1", "landmark": "🪨 Rock" },
+    "tree2": { "x": 900, "y": 200, "down": "rock1", "landmark": "🌲 Tree" },
+    "ruins2": { "x": 900, "y": 800, "right": "bush2", "down": "rock2", "up": "rock1", "landmark": "🏛️ Ruins" },
+    "rock2": { "x": 900, "y": 1100, "up": "ruins2", "landmark": "🪨 Rock" },
+    "bush2": { "x": 1200, "y": 800, "up": "gate", "right": "tree3", "down": "rock3", "left": "ruins2", "landmark": "🌿 Bush" },
+    "rock3": { "x": 1200, "y": 1100, "up": "bush2", "landmark": "🪨 Rock" },
+    "tree3": { "x": 1500, "y": 800, "left": "bush2", "landmark": "🌲 Tree" },
+    "gate": { "x": 1200, "y": 500, "down": "bush2", "landmark": "⛩️ Gate" }
+  },
+  "sequence": [
+    { "target": "tree1", "prompt": "Head north towards the large Tree." },
+    { "target": "rock1", "prompt": "Turn east at the Rock." },
+    { "target": "ruins2", "prompt": "Go south past the Ruins." },
+    { "target": "bush2", "prompt": "Head east towards the Bush." },
+    { "target": "gate", "prompt": "Go north to the Gate." }
+  ]
+}

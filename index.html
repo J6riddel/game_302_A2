@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DO YOU COPY?</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen active">
+        <h1>DO YOU COPY?</h1>
+        <button id="btn-tutorial">TUTORIAL</button>
+        <button id="btn-start">START</button>
+      </div>
+
+      <!-- Tutorial Screen -->
+      <div id="tutorial-screen" class="screen">
+        <div id="tutorial-visual" class="visual-circle"></div>
+        <p id="tutorial-text"></p>
+        <p class="click-prompt">Click to move ahead</p>
+      </div>
+
+      <!-- Game Screen 1 -->
+      <div id="game-screen-1" class="screen">
+        <div class="objective-box">
+          <h2>OBJECTIVE</h2>
+          <p>Listen to and decode walkie talkie prompts to successfully navigate out of the maze.</p>
+        </div>
+        <p class="click-prompt">Click to move ahead</p>
+      </div>
+
+      <!-- Game Screen 2 -->
+      <div id="game-screen-2" class="screen">
+        <div class="instruction-box">Use the arrow keys to make a move.</div>
+        <div class="instruction-box">Press <em>Clarify</em> to improve signal momentarily.</div>
+        <div class="instruction-box"><strong>But remember to watch your rover battery!</strong></div>
+        <p class="click-prompt">Click to move ahead</p>
+      </div>
+
+      <!-- Main Game Screen -->
+      <div id="main-game-screen" class="screen">
+        <div id="battery-display">🔋 <span id="battery-text">100%</span> Rover Battery</div>
+        
+        <div id="maze-container">
+          <div id="maze-wrapper">
+            <svg id="maze-svg"></svg>
+            <div id="landmarks-container"></div>
+          </div>
+          
+          <div id="player-character"></div>
+          <div id="darkness-overlay"></div>
+        </div>
+        
+        <div id="controls">
+          <button id="btn-clarify">CLARIFY SIGNAL<br><span>-5% battery</span></button>
+        </div>
+      </div>
+
+      <!-- End Screen -->
+      <div id="end-screen" class="screen">
+        <h1 id="end-title"></h1>
+        <p id="end-message"></p>
+        <button id="btn-next-level" style="display: none;">NEXT LEVEL</button>
+        <button id="btn-restart">PLAY AGAIN</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

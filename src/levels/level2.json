@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "width": 2400,
+  "height": 1800,
+  "startNode": "start",
+  "nodes": {
+    "start": { "x": 1200, "y": 1400, "up": "tent1", "landmark": "📍 Start" },
+    "tent1": { "x": 1200, "y": 1100, "down": "start", "left": "web1", "right": "bones1", "up": "tree4", "landmark": "⛺ Tent" },
+    "web1": { "x": 900, "y": 1100, "right": "tent1", "up": "rock4", "landmark": "🕸️ Web" },
+    "bones1": { "x": 1500, "y": 1100, "left": "tent1", "up": "statue1", "landmark": "🦴 Bones" },
+    "statue1": { "x": 1500, "y": 800, "down": "bones1", "left": "tree4", "right": "mushroom1", "up": "canoe1", "landmark": "🗿 Statue" },
+    "mushroom1": { "x": 1800, "y": 800, "left": "statue1", "landmark": "🍄 Mushroom" },
+    "canoe1": { "x": 1500, "y": 500, "down": "statue1", "left": "exit2", "landmark": "🛶 Canoe" },
+    "tree4": { "x": 1200, "y": 800, "down": "tent1", "right": "statue1", "left": "rock4", "up": "exit2", "landmark": "🌲 Tree" },
+    "rock4": { "x": 900, "y": 800, "down": "web1", "right": "tree4", "up": "ruins3", "landmark": "🪨 Rock" },
+    "ruins3": { "x": 900, "y": 500, "down": "rock4", "right": "exit2", "landmark": "🏛️ Ruins" },
+    "exit2": { "x": 1200, "y": 500, "down": "tree4", "left": "ruins3", "right": "canoe1", "landmark": "🚁 Extraction" }
+  },
+  "sequence": [
+    { "target": "tent1", "prompt": "Head north to the abandoned Tent." },
+    { "target": "bones1", "prompt": "Watch out, turn east towards the pile of Bones." },
+    { "target": "statue1", "prompt": "Go north until you see the ancient Statue." },
+    { "target": "tree4", "prompt": "Head west into the thicket towards the Tree." },
+    { "target": "rock4", "prompt": "Continue west to the mossy Rock." },
+    { "target": "ruins3", "prompt": "Go north to the crumbling Ruins." },
+    { "target": "exit2", "prompt": "Finally, head east to the extraction point." }
+  ]
+}
