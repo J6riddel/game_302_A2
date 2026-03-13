@@ -26,11 +26,14 @@ Players navigate with arrows, if they select the correct direction, the maze sli
 ## Iteration Notes
 
 a. Post-Playtest: Three changes made based on playtesting
-Clarification of Audio
-Adding clear tutorial
-Navigation with the help of North, South, East, West and adding assets that could help the player navigate themselves in the maze.
+1. Clarify Audio, during playtesting audio did not give proper directions.
+2. Add a clear tutorial fo user to undeastand how to navigate game
+3. Navigation with the help of North, South, East, West(instead of up, down, right, left, and adding assets that could help the player navigate themselves in the maze.
+
 b. Post-Showcase: Two planned improvements
-Create more complex audio static, players reported once they decoded "East" (For eexample) the game became too easy.
+1. Create more complex audio static, players reported once they decoded "East" (For example) the game became too easy.
+2. Create more complex directions the player can access. Expand to North-East, South-West and etc
+
 
 6. Assets: List and attribute all non-original assets with in-text citations
 Most assets were generated with the help help of Gemini
