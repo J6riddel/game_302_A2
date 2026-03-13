@@ -35,10 +35,10 @@ b. Post-Showcase: Two planned improvements
 2. Create more complex directions the player can access. Expand to North-East, South-West and etc
 
 
-6. Assets: List and attribute all non-original assets with in-text citations
+## Assets 
 Most assets were generated with the help help of Gemini
 
-7. References:
+## References
 no references applicable
 
 ## GenAI
